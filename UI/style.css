@@ -1,0 +1,97 @@
+/* Globle */
+body {
+    background-color: white;
+}
+.main {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Button */
+.stButton>button {
+    color: white;
+    background: linear-gradient(135deg, #007bff, #0056b3);
+    border-radius: 8px;
+    padding: 0.6rem 1.2rem;
+    font-size: 16px;
+    font-weight: bold;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.2s;
+}
+
+/* Mouse Hover */
+.stButton>button:hover {
+    background: linear-gradient(135deg, #0056b3, #003f7f);
+    transform: translateY(-2px);
+}
+
+/* Image */
+.stImage {
+    border: 2px solid #dee2e6;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* Separation line */
+hr {
+    border: 0;
+    height: 1px;
+    background: linear-gradient(to right, #007bff, #f5f5f5, #007bff);
+    margin: 20px 0;
+}
+
+/* Title and Subtitle */
+.stTitle {
+    color: #343a40;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.stSubheader {
+    color: #007bff;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+/* Load Animation */
+.stSpinner > div {
+    border-top-color: #007bff;
+    animation: spin 1s linear infinite;
+}
+
+/* @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+} */
+
+/* Custom Style */
+.custom-card {
+    background-color: #ffffff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.custom-heading {
+    font-size: 1.5rem;
+    color: #0056b3;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.custom-paragraph {
+    color: #6c757d;
+    font-size: 1rem;
+    line-height: 1.6;
+    text-align: justify;
+}
