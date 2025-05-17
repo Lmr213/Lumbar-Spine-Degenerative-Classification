@@ -14,7 +14,12 @@ It supports an intuitive workflow from image upload to model prediction and visu
 - Interactive result interface compatible with hospital workflows
 
 ---
+## System Code
 
+- The backend system code handles data preprocessing, keypoint detection, and model training.
+Although included in the project, it is not the main focus of this repository and is not required to run the UI application.
+
+---
 ## How to Run
 
 Ensure Python ≥ 3.8 is installed. Then follow these steps:
@@ -32,30 +37,6 @@ pip install -r requirements.txt
 
 # Launch the Streamlit application
 streamlit run app.py
-
-
-## Application Workflow
-
-Start Page
-Introduces the application's purpose
-
-Click the Start button to proceed to the Upload Page
-
-Upload Page
-Enter the folder path containing .dcm images for analysis
-
-Click the Analyze button to trigger model inference
-
-A loading spinner will appear during processing
-
-Upon completion, the app navigates to the Results Page automatically
-
-Results Page
-Displays cropped images for each view (Sagittal T1, T2/STIR, Axial T2) with key regions highlighted
-
-Presents a prediction table showing conditions and severity levels (Normal/Mild, Moderate, Severe)
-
-Includes a Try Another button to restart the workflow
 
 
 ├── app.py                    # Main application controller
@@ -77,8 +58,5 @@ Includes a Try Another button to restart the workflow
 ├── *.pt                      # Pretrained model weights
 ├── *.csv                     # Sample outputs or helper files
 
-System Code
-The backend system code handles data preprocessing, keypoint detection, and model training.
-Although included in the project, it is not the main focus of this repository and is not required to run the UI application.
 
 
